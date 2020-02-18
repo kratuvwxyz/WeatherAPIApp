@@ -3,25 +3,31 @@ $('.time').text(moment().format('dddd, MMMM Do YYYY'));
 
 // Weather Api
 const apiKey = "aed52c01e7f5375831def9553ce0837d";
+let weatherURL;
 // https://api.openweathermap.org/data/2.5/weather?appid=${apiKey}
 
-let cityName = [];console.log(cityName);
+let cityName = [];
+console.log(cityName);
 
-let retrievedData = localStorage.getItem("myCityKey");console.log(retrievedData);
+let retrievedData = localStorage.getItem("myCityKey");
+console.log(retrievedData);
 
-let cityName2 = JSON.parse(retrievedData);console.log(cityName2);
+let cityName2 = JSON.parse(retrievedData);
+console.log(cityName2);
 
-if (cityName2 === null){
+if (cityName2 === null) {
     cityName = ["Austin", "Houston", "Dallas", "San Antonio"];
 } else {
-    cityName = cityName2;console.log(cityName);
+    cityName = cityName2;
+    console.log(cityName);
 }
 
-$(document).ready(function(){
+$(document).ready(function () {
+
     // create new button
-    let createNewButn = function(){
+    let createNewButn = function () {
         $('.cityNames').empty();
-        for(let i = 0; i < cityName.length; i++){
+        for (let i = 0; i < cityName.length; i++) {
             let newCityButton = $('<button>').addClass('searchBtn btn btn-dark btn-lg btn-block').text(cityName[i]).val(i);
             let cancel = $('<button>').addClass('remove btn btn-dark btn-sm float-right').text('X');
             newCityButton.append(cancel);
@@ -29,20 +35,43 @@ $(document).ready(function(){
         }
     }
     createNewButn();
+
     // remove button
-    $(document).on('click', '.remove', function(){
+    $(document).on('click', '.remove', function () {
         let value = $(this).closest('.searchBtn').val();
         cityName.splice(value, 1);
         localStorage.setItem("myCityKey", JSON.stringify(cityName));
         $(this).closest('.searchBtn').remove();
     });
+
+    // find a weather
+    let newWeather = function () {
+        $.ajax({
+            url: weatherURL,
+            method: "GET"
+        }).then(function (response) {
+            console.log(response);
+        });
+    }
+
     // click search button to create new button
-    $(document).on('click', '#searchBtn', function(){
+    $(document).on('click', '#searchBtn', function () {
         let city = $("#city").val();
         $("#city").val("");
-        cityName.push(city);console.log(cityName);
+        cityName.push(city);
+        console.log(cityName);
         localStorage.setItem("myCityKey", JSON.stringify(cityName));
         createNewButn();
+        weatherURL = `https://api.openweathermap.org/data/2.5/weather?appid=${apiKey}&q=${city}`;
+        newWeather();
+    });
+
+    // click on current cities weather
+    $(document).on('click', '.searchBtn', function() {
+        let value = $(this).closest('.searchBtn').val();
+        city = cityName[value];
+        weatherURL = `https://api.openweathermap.org/data/2.5/weather?appid=${apiKey}&q=${city}`;
+        newWeather();
     });
 
 });
