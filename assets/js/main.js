@@ -51,6 +51,55 @@ $(document).ready(function () {
             method: "GET"
         }).then(function (response) {
             console.log(response);
+            $("#dashboard").empty();
+
+            let row = $("<div class='row'>");
+            let col = $("<div class='col-sm-12'>");
+            
+            
+            let currentDate = moment(response.dt, "X").format("MM/DD/YYYY");
+            let img = $("<img>").attr("src", "http://openweathermap.org/img/w/" + response.weather[0].icon + ".png");
+            let h3 = $("<h3>").append(response.name, " <span style='font-size:12px;'>(" + currentDate + ")</span> ", img)
+            
+            
+            let tempratureDiv = $('<div>').text('Temprature').addClass("h5 text-dark");
+
+            let currentTemp = Math.round(((response.main.temp - 273.15) * 1.8) + 32);
+            let feelsLikeTemp = Math.round(((response.main.feels_like - 273.15) * 1.8) + 32);
+            let minTemp = Math.round(((response.main.temp_min - 273.15) * 1.8) + 32);
+            let maxTemp = Math.round(((response.main.temp_max - 273.15) * 1.8) + 32);
+            let humidTemp = Math.round(((response.main.humidity - 273.15) * 1.8) + 32);
+            let windSpeed = response.wind.speed;
+
+            let p = $("<p>").addClass("h6");
+            p.append("Temperature: " + currentTemp + "˚ F &#160;&#160;|&#160;&#160;");
+            p.append("Feels Like: " + feelsLikeTemp + "˚ F <br><br>");
+            p.append("Min Temp: " + minTemp + "˚ F &#160;&#160;|&#160;&#160;");
+            p.append("Max Temp: " + maxTemp + "˚ F <br><br>");
+            p.append("Humidity: " + humidTemp + " &#160;&#160;|&#160;&#160;");
+            p.append("Wind Speed: " + windSpeed + " MPH");
+            tempratureDiv.append("<br><hr>", p);
+            col.append(h3, tempratureDiv);
+            row.append(col);
+            $("#dashboard").append(row);
+
+            /*
+            sys:
+                type: 1
+                id: 4404
+                country: "US"
+                sunrise: 1582030733
+                sunset: 1582071133
+            timezone: -21600
+            */
+            
+   
+            
+            let lat = response.coord.lat;
+            let lon = response.coord.lon;
+
+
+
         });
     }
 
