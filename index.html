@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    
+    <title>Weather API</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+
+    <!-- Developer CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+    <!-- header.jumbotron.text-center+.container>.row>#searchArea.col-sm-4>h3#searchTitle+input:t+button#sarchBtn^.col-sm-8>#dashboard+#five-day -->
+    <header class="jumbotron text-center display-4">Weather Dashboard</header>
+    <div class="container">
+        <div class="row">
+            <div id="searchArea" class="col-sm-4">
+                <input type="text" name="city" id="city" placeholder="Add City Name" class="p-2 bg-light">
+                <button id="searchBtn" class="btn btn-danger p-2 m-2">Search</button>
+                <div class="cityNames pt-3"></div>
+            </div>
+            <div class="col-sm-8">
+                <div id="dashboard" class="bg-light p-3"></div>
+                <div id="five-day" class="p-3"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+
+    <!-- Moment JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+
+    <!-- Developer JavaScript -->
+    <!-- <script src="assets/js/script.js"></script> -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
