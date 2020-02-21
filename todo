@@ -5,9 +5,13 @@ Front-End:
     ☐ add sunrise @high
     ☐ add sunset @high 
     ☐ add UV if possible @low 
+    ☐ make city buttons side nav bar responsive ready @low 
 Back-End:
     ☐ resolve errors in console @low @low
     ☐ When you click "x" to delete city name, ajax call for that city, remove that @high 
     ☐ remove console.log @low
-    
+Other:
+    ☐ update README.md file
+    ☐ add in the portfolio
+    ☐ what next?
 
