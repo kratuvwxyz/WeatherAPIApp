@@ -11,6 +11,7 @@ Back-End:
     ☐ When you click "x" to delete city name, ajax call for that city, remove that @high 
     ☐ remove console.log @low
 Other:
+    ☐ Api: https://openweathermap.org/
     ☐ update README.md file
     ☐ add in the portfolio
     ☐ what next?
