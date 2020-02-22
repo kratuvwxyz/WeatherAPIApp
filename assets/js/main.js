@@ -1,5 +1,6 @@
 // time
-$('.time').text(moment().format('dddd, MMMM Do YYYY'));
+
+$('.time').text(moment().format('dddd, LL'));
 
 // hr line
 const hr = $('<hr>');
@@ -57,17 +58,23 @@ $(document).ready(function () {
             $("#dashboard").empty();
             $("#five-day").empty();
             let res = response;
-
-            let row = $("<div class='row'>");
-            let col = $("<div class='col-sm-12'>");
-
-
+            // bootstrap css row and col setup
+            let row = $('<div>').addClass('row');
+            let col = $('<div>').addClass('col-12');
+            let col6 = $('<div>').addClass('col-md-6');
+            let col4 = $('<div>').addClass('col-md-4');
+            let col3 = $('<div>').addClass('col-md-3');
+            let col2 = $('<div>').addClass('col-md-2');
+            // country
+            let country = res.sys.country;
+            // current Date
             let currentDate = moment(res.dt, "X").format("MM/DD/YYYY");
             let img = $("<img>").attr("src", "http://openweathermap.org/img/w/" + res.weather[0].icon + ".png");
-            let h3 = $("<h3>").append(res.name, " <span style='font-size:12px;'>(" + currentDate + ")</span> ", img)
+            let h3 = $("<h3>").append(res.name, " <span style='font-size:12px;'>(" + country + ")</span> ", img)
 
 
             let tempratureDiv = $('<div>').text('Temprature').addClass("h5 text-dark");
+
 
             let currentTemp = Math.round(((res.main.temp - 273.15) * 1.8) + 32);
             let feelsLikeTemp = Math.round(((res.main.feels_like - 273.15) * 1.8) + 32);

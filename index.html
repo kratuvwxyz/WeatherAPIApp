@@ -25,7 +25,7 @@
     <!-- header.jumbotron.text-center+.container>.row>#searchArea.col-sm-4>h3#searchTitle+input:t+button#sarchBtn^.col-sm-8>#dashboard+#five-day -->
     <header class="jumbotron text-center">
         <div class="display-4">Weather Dashboard</div>
-        <h6 class="time"></h6>
+        <h4 class="time p-2 m-2 border border-dark bg-dark text-light"></h4>
     </header>
     <div class="container">
         <div class="row">
@@ -35,7 +35,8 @@
                 <div class="cityNames pt-3"></div>
             </div>
             <div class="col-sm-8">
-                <div id="dashboard" class="bg-light p-3">Search or click a city to get your current weather and five days forcast.</div>
+                <div id="dashboard" class="bg-light p-3">Search or click a city name to get your current weather and
+                    five days forcast.</div>
                 <hr>
                 <div id="five-day" class="p-3"></div>
             </div>
@@ -50,6 +51,18 @@
 
     <!-- Moment JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script>
+        function updateClock() {
+            var now = moment(),
+                second = now.seconds() * 6,
+                minute = now.minutes() * 6 + second / 60,
+                hour = ((now.hours() % 12) / 12) * 360 + 90 + minute / 12;
+
+            $('#hour').css("transform", "rotate(" + hour + "deg)");
+            $('#minute').css("transform", "rotate(" + minute + "deg)");
+            $('#second').css("transform", "rotate(" + second + "deg)");
+        }
+    </script>
 
     <!-- Developer JavaScript -->
     <!-- <script src="assets/js/script.js"></script> -->
