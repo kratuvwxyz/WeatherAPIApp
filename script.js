@@ -1489,6 +1489,7 @@ dataSetup = (x) => {
   $(".country").text(x.sys.country);
   $(".weatherIcon").attr("src", `http://openweathermap.org/img/wn/${x.weather[0].icon}@2x.png`);
   $(".temp").html(Math.round((x.main.temp - 273.15) * 1.8 + 32) + "<sup style='font-size:.5em;'>˚F</sup>");
+  $(".feelsLike").html(Math.round((x.main.feels_like - 273.15) * 1.8 + 32));
   $(".lowTemp").text(Math.round((x.main.temp_min - 273.15) * 1.8 + 32));
   $(".highTemp").text(Math.round((x.main.temp_max - 273.15) * 1.8 + 32));
   $(".humid").text(x.main.humidity);
