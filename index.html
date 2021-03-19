@@ -95,25 +95,78 @@
       <!-- top nav -->
       <nav class="nav nav-pills nav-fill">
         <a class="nav-link" aria-current="page" href="#"><i class="fas fa-plus"></i></a>
-        <a class="nav-link disabled dayDate x" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-        <a class="nav-link" href="#"><i class="fas fa-temperature-high"></i></a>
+        <a class="nav-link disabled dayDate x" href="#" tabindex="-1" aria-disabled="true">TIME</a>
+        <a class="nav-link" href="#"><i class="fas fa-meteor"></i></a>
       </nav>
 
       <!-- top header -->
-      <div class="container">
+      <div class="container-fluid">
         <div class="row">
-          <div class="col-md-8 offset-md-2 mt-5">
-            <div class="container">
+          <div class="col-md-12 col-xl-10 offset-xl-1 col-xxl-8 offset-xxl-2 mt-2">
+            <div class="container mb-4">
               <div class="row">
-                <div class="col text-center cityName"></div>
+                <div class="col text-center">
+                  <h1 class="display-1 cityName"></h1>
+                  <p class="fs-6"><span class="lat"></span>&#160;&#160;<i class="fas fa-crosshairs fs-6"></i>&#160;&#160;<span class="lon"></span></p>
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-5"><hr /></div>
+                      <div class="col-2 fs-6 country"></div>
+                      <div class="col-5"><hr /></div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="container">
               <div class="row">
                 <!-- ?? weather Icon -->
-                <div class="col"></div>
+                <div class="col-md-6">
+                  <div class="container">
+                    <div class="row d-flex align-items-center">
+                      <div class="col-4">
+                        <img class="weatherIcon" alt="Weather Icon" width="100%" />
+                      </div>
+                      <div class="col-8">
+                        <div class="container">
+                          <div class="row">
+                            <div class="col p-0">
+                              <span class="display-2 temp text-end p-0"></span>
+                            </div>
+                            
+                          </div>
+                          <div class="row">
+                            <div class="col"><i class="fas fa-temperature-low"></i>&#160;<span class="fs-5 lowTemp"></span><sup class="text-primary x">˚F</sup></div>
+                            <div class="col"><i class="fas fa-temperature-high"></i>&#160;<span class="fs-5 highTemp"></span><sup class="text-primary x">˚F</sup></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
                 <!-- ?? weather Temp -->
-                <div class="col"></div>
+                <div class="col-md-6">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col">
+                        <i class="fas fa-sun fs-3"></i> <sup class="text-primary">UV</sup>
+                        <div class="fs-2"><span class="uv"></span><sup style="letter-spacing: -1px" class="fs-6">*</sup></div>
+                      </div>
+                      <div class="col">
+                        <i class="fas fa-tint fs-3"></i> <sup class="text-primary">HUMD</sup>
+                        <div class="fs-2"><span class="humid"></span><sup style="letter-spacing: -1px" class="fs-6">%</sup></div>
+                      </div>
+                      <div class="col">
+                        <i class="fas fa-wind fs-3"></i> <sup class="text-primary">WIND</sup>
+                        <div class="fs-2"><span class="wind"></span><sup style="letter-spacing: -1px" class="fs-6">M/H</sup></div>
+                      </div>
+                    </div>
+                    <div class="row mt-3">
+                      <div class="col"><i class="far fa-sun"></i>&#160;<span class="fs-5 sunrise"></span></div>
+                      <div class="col"><i class="far fa-moon"></i>&#160;<span class="fs-5 sunset"></span></div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
