@@ -1495,6 +1495,7 @@ dataSetup = (x) => {
   $(".humid").text(x.main.humidity);
   $(".wind").text(x.wind.speed);
   $(".uv").text(x.main.humidity / 2.5);
+  $(".description").text(x.weather[0].description)
   let sr = new Date(x.sys.sunrise * 1000);
   $(".sunrise").text(sr.toLocaleTimeString());
   let ss = new Date(x.sys.sunset * 1000);
