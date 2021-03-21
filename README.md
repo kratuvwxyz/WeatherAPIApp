@@ -2,18 +2,22 @@
 
 Another Weather App
 
+## Motivation
+
+The HTML Geolocation API and Open Weather API gives you information without searching anything. 
+
 ### Version
 
-- **...**
-- Last Update: ...
+- **2103210046**
+- Last Update: 21/03/21
 
 ### Standards
 
-- ...
+- HTML5, CSS3, JavaScript
 
 ### Components
 
-- ...
+- JQuery, Bootstrap, Geolocation API, Open Weather API
 
 ### Software
 
@@ -23,6 +27,8 @@ Another Weather App
 ### Thank you
 
 - https://stackoverflow.com/questions/18536726/javascript-to-display-the-current-date-and-time
+- https://www.w3schools.com/html/html5_geolocation.asp
+- https://openweathermap.org/
 
 ## CONTACT
 

@@ -22,19 +22,19 @@
                             
 /* SITE */
 
-    Version: ...
+    Version: 2103210046
 
                             
-    Last update: ...
+    Last update: 21/03/21
 
                                 
-    Standards: ...
+    Standards: HTML5, CSS3, JavaScript
 
                                 
-    Components: ...
+    Components: JQuery, Bootstrap, Geolocation API, Open Weather API
 
                                 
-    Software: ...
+    Software: Visual Studio Code Editor
 
 
     Version Control: GitHub
