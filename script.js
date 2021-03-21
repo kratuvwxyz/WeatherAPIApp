@@ -100,6 +100,7 @@ newForcast = (x) => {
 };
 
 newWeather = (x) => {
+  $("#recipient-name").val("");
   $.ajax({
     url: `https://api.openweathermap.org/data/2.5/weather?appid=${apiKey}&q=${x}`,
     method: "GET",
