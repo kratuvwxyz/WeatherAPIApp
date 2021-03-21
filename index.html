@@ -90,11 +90,11 @@
   </head>
 
   <body>
-    <div class="mainContainer">
+    <div class="mainContainer mb-5 pb-5">
       <!-- ! -->
       <!-- top nav -->
       <nav class="nav nav-pills nav-fill">
-        <a class="nav-link" aria-current="page" href="#"><i class="fas fa-plus"></i></a>
+        <a class="nav-link text-decoration-none" aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fas fa-plus"></i></a>
         <a class="nav-link disabled dayDate x" href="#" tabindex="-1" aria-disabled="true">TIME</a>
         <a class="nav-link" href="#"><i class="fas fa-meteor"></i></a>
       </nav>
@@ -173,48 +173,34 @@
           </div>
         </div>
       </div>
-
       <hr />
       <!-- top five forcast -->
       <div class="container">
         <div class="row">
           <div class="col py-5">
-            <p class="fs-12 text-center">Next Four Days Forcast</p>
+            <p class="fs-12 text-center kratu">Next Four Days Forcast</p>
           </div>
         </div>
-        <div class="row p-0">
-          <div class="col-md-3 bg-light my-2">
-            <div class="container-fluid bg-danger p-0">
-              <div class="row p-0">
-                <div class="col-2 col-md-12 bg-danger">
-                  <div class="row p-0">
-                    <div class="col">
-                      <p class="fs-4" style="line-height: auto !important"><span class="four-day">Sat</span> <strong class="four-date fs-1">20</strong></p>
-                    </div>
-                    <div class="col"><img class="weatherIcon" alt="Weather Icon" width="100%" /></div>
-                  </div>
+        <div class="row fff pb-5"></div>
+      </div>
+      <!-- to modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">New Weather</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="recipient-name" class="col-form-label">City Name:</label>
+                  <input type="text" class="form-control" id="recipient-name" />
                 </div>
-                <div class="col-4 col-md-12 p-1 bg-info">
-                  <div class="row p-0">
-                    <div class="col">
-                      
-                    </div>
-                  </div>
-                </div>
-                <div class="col-6 col-md-12" style="letter-spacing:0">
-                  <div class="row">
-                    <div class="col py-3">
-                      <sup><i class="fas text-secondary fa-temperature-low fs-12"></i></sup>&#160;<span class="fs-11 lowTemp"></span><sup class="text-primary x fs-12">˚F</sup>&#160;<sup><i class="fas text-secondary fa-temperature-high fs-12"></i></sup>&#160;<span class="fs-11 highTemp"></span><sup class="text-primary x fs-12">˚F</sup>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col py-3">
-                      <sup><i class="fas text-secondary fa-temperature-low fs-12"></i></sup>&#160;<span class="fs-11 lowTemp"></span><sup class="text-primary x fs-12">˚F</sup>&#160;<sup><i class="fas text-secondary fa-temperature-high fs-12"></i></sup>&#160;<span class="fs-11 highTemp"></span><sup class="text-primary x fs-12">˚F</sup>
-                    </div>
-                  </div>
-                  
-                </div>
-              </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" onclick="findWeatherInfo()" data-bs-dismiss="modal">Weather Info <i class="fas fa-play"></i></button>
             </div>
           </div>
         </div>

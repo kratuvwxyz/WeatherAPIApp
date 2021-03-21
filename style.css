@@ -44,15 +44,42 @@ body {
   line-height: 1 !important;
 }
 
+.four-fs-10 {
+  font-size: 4vw !important;
+}
+
+/* border */
+.four-box-border {
+  border: 5px solid rgb(200, 200, 200);
+  border-radius: 15px;
+}
+
 /* LOW SIDE */
 /* sm or less */
+
+@media only screen and (max-width: 375px) {
+  .under-375 {
+    display: none !important;
+  }
+}
 @media only screen and (max-width: 576px) {
   * {
     letter-spacing: 0px;
   }
+  .four-fs-10 {
+    font-size: 15vw !important;
+    letter-spacing: -4px;
+  }
+  .four-image {
+    width: 200%;
+  }
 }
 /* md or less */
 @media only screen and (max-width: 768px) {
+  .four-fs-10 {
+    font-size: 12vw !important;
+    letter-spacing: -1px;
+  }
   .hide-md {
     display: none !important;
   }
@@ -84,12 +111,20 @@ body {
 }
 /* md high */
 @media only screen and (min-width: 768px) {
+  .four-fs-10 {
+    font-size: 8vw !important;
+    letter-spacing: -4px;
+  }
 }
 /* lg high */
 @media only screen and (min-width: 992px) {
 }
 /* xl high */
 @media only screen and (min-width: 1200px) {
+  .four-fs-10 {
+    font-size: 7vw !important;
+    letter-spacing: -4px;
+  }
 }
 /* xxl high */
 @media only screen and (min-width: 1400px) {
