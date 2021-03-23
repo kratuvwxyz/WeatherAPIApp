@@ -32,11 +32,11 @@ The Another Weather App use Open Weather API as its source of information for th
 
 ### CONTRIBUTE
 
-- A [contributing guideline]('https://github.com/kratuvwxyz/CONTRIBUTE') available.
+- A [contributing guideline](https://github.com/kratuvwxyz/CONTRIBUTE) available.
 
 ### LICENSE
 
-- [MIT]('https://github.com/kratuvwxyz/LICENSE') © 2021 Kratu Desai, DESAIGN LLC.
+- [MIT](https://github.com/kratuvwxyz/LICENSE) © 2021 Kratu Desai, DESAIGN LLC.
 
 ## CONTACT
 
