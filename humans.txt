@@ -12,32 +12,44 @@
     Location: Austin, Texas, USA
 
 							
-/* THANKS */
+/* CREDITS */
 
 							
     • Desaign Studio
     # https://humanstxt.org
     # https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/manifest.json
+    - https://stackoverflow.com/questions/18536726/javascript-to-display-the-current-date-and-time
+    - https://www.w3schools.com/html/html5_geolocation.asp
+    - https://openweathermap.org/
 
                             
 /* SITE */
 
-    Version: 2103210046
+Version:
 
-                            
-    Last update: 21/03/21
+    - 2103210046
+    ✔ Last Update  @done (March 23rd 2021, 14:15)
 
-                                
-    Standards: HTML5, CSS3, JavaScript
+Framework:
 
-                                
-    Components: JQuery, Bootstrap, Geolocation API, Open Weather API
+    - HTML5, CSS3, JavaScript
 
-                                
-    Software: Visual Studio Code Editor
+Built With:
 
+    - JQuery, Bootstrap, Geolocation API, Open Weather API, Font Awesome Icons, Google Fonts, SVG
 
-    Version Control: GitHub
+Software:
+
+    - Visual Studio Code Editor
+    - Github for versioning
+
+Contributors:
+
+    - COC : https://github.com/kratuvwxyz/CONTRIBUTE
+
+License:
+
+    - MIT License : https://github.com/kratuvwxyz/LICENSE
 
 
 /* POWERED BY */

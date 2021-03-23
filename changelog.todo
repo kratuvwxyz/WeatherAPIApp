@@ -1,0 +1,34 @@
+Added:
+    ☐ add country @high
+    ✔ add sunrise @high @done (March 21st 2021, 0:34)
+    ✔ add sunset @high  @done (March 21st 2021, 0:34)
+    ☐ add UV if possible @low 
+    ✔ Api: https://openweathermap.org/ @done (March 23rd 2021, 14:37)
+
+
+Changed:
+    ✔ Current Weather Layout @high  @done (March 21st 2021, 0:34)
+    ✔ Five Days Forcast Layout @high @done (March 21st 2021, 0:34)
+    ☐ make city buttons side nav bar responsive ready @low 
+    ☐ When you click "x" to delete city name, ajax call for that city, remove that @high 
+    ✔ update README.md file @done (March 23rd 2021, 14:37)
+
+
+Removed:
+    ✔ remove console.log @low @done (March 21st 2021, 0:35)
+
+
+Fixed:
+    ☐ store cities in localstorage and create new buttons
+    ✔ resolve errors in console @low @low @done (March 21st 2021, 0:35)
+
+
+Security:
+
+
+Released:
+    ☐ version 2.0.0 with license
+
+    
+Requested:
+

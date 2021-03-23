@@ -1,34 +1,42 @@
-## Project title
+## Another Weather App by Desaign Studio
 
-Another Weather App
+The app allows the user to see the weather of a number of selected cities. Locations can be changed by pressing the plus icon which allows the user to type in the city's name.
 
-## Motivation
+<img src="./SS1.png" alt="Screen Shot" width="500">
 
-The HTML Geolocation API and Open Weather API gives you information without searching anything. 
+The Another Weather App use Open Weather API as its source of information for the weather. The HTML Geolocation API gives you your current location weather information. 
 
 ### Version
 
 - **2103210046**
-- Last Update: 21/03/21
+✔ Last Update  @done (March 23rd 2021, 14:15)
 
-### Standards
+### Framework
 
 - HTML5, CSS3, JavaScript
 
-### Components
+### Built With
 
-- JQuery, Bootstrap, Geolocation API, Open Weather API
+- JQuery, Bootstrap, Geolocation API, Open Weather API, Font Awesome Icons, Google Fonts, SVG
 
 ### Software
 
 - Visual Studio Code Editor
 - Github for versioning
 
-### Thank you
+### Credits
 
 - https://stackoverflow.com/questions/18536726/javascript-to-display-the-current-date-and-time
 - https://www.w3schools.com/html/html5_geolocation.asp
 - https://openweathermap.org/
+
+### CONTRIBUTE
+
+- A [contributing guideline]('https://github.com/kratuvwxyz/CONTRIBUTE') available.
+
+### LICENSE
+
+- [MIT]('https://github.com/kratuvwxyz/LICENSE') © 2021 Kratu Desai, DESAIGN LLC.
 
 ## CONTACT
 
