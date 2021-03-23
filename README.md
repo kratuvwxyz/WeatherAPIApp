@@ -9,7 +9,7 @@ The Another Weather App use Open Weather API as its source of information for th
 ### Version
 
 - **2103210046**
-✔ Last Update  @done (March 23rd 2021, 14:15)
+✔ Last Update  @done (March 23rd 2021, 14:44)
 
 ### Framework
 
